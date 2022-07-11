@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="text" />
+    <input type="button" id="btn" value="Submit" />
+    <script>
+        $("#btn").click(function () {
+            var url = "https://www.infostock.co.kr/site/3d/3d_show.asp?codename=" + $("#text").val() + "#chart";
+            window.open(url);
+        });
+    </script>
+
+</body>
+
+</html>
